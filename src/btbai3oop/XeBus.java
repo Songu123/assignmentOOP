@@ -11,11 +11,13 @@ public class XeBus {
 
     public XeBus(String hangXe, int namSanXuat, float dongCo, int soGhe) {
         this.hangXe = hangXe;
-        if (namSanXuat > 0){
-            this.namSanXuat = namSanXuat;
+        if (namSanXuat > 0) {
+            setNamSanXuat(namSanXuat);
         }
         this.dongCo = dongCo;
-        this.soGhe = soGhe;
+        if (soGhe > 0) {
+            setSoGhe(soGhe);
+        }
     }
 
     public String getHangXe() {
@@ -31,9 +33,7 @@ public class XeBus {
     }
 
     public void setNamSanXuat(int namSanXuat) {
-        if (namSanXuat > 0){
-            this.namSanXuat = namSanXuat;
-        }
+        this.namSanXuat = namSanXuat;
     }
 
     public float getDongCo() {

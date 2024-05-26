@@ -10,7 +10,9 @@ public class XeOto {
 
     public XeOto(String hangXe, int namSanXuat, float dongCo) {
         this.hangXe = hangXe;
-        this.namSanXuat = namSanXuat;
+        if (namSanXuat > 0) {
+            setNamSanXuat(namSanXuat);
+        }
         this.dongCo = dongCo;
     }
 
