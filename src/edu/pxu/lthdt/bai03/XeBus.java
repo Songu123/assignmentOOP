@@ -1,4 +1,4 @@
-package btbai3oop;
+package edu.pxu.lthdt.bai03;
 
 public class XeBus {
     private String hangXe;
@@ -11,9 +11,9 @@ public class XeBus {
 
     public XeBus(String hangXe, int namSanXuat, float dongCo, int soGhe) {
         this.hangXe = hangXe;
-        setNamSanXuat(namSanXuat);
+        this.setNamSanXuat(namSanXuat);
         this.dongCo = dongCo;
-        setSoGhe(soGhe);
+        this.setSoGhe(soGhe);
     }
 
     public String getHangXe() {
@@ -29,7 +29,9 @@ public class XeBus {
     }
 
     public void setNamSanXuat(int namSanXuat) {
-        this.namSanXuat = namSanXuat;
+        if (namSanXuat > 0){
+            this.namSanXuat = namSanXuat;
+        }
     }
 
     public float getDongCo() {

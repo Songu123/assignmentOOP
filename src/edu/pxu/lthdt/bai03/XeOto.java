@@ -1,4 +1,4 @@
-package btbai3oop;
+package edu.pxu.lthdt.bai03;
 
 public class XeOto {
     private String hangXe;
@@ -10,7 +10,7 @@ public class XeOto {
 
     public XeOto(String hangXe, int namSanXuat, float dongCo) {
         this.hangXe = hangXe;
-        setNamSanXuat(namSanXuat);
+        this.setNamSanXuat(namSanXuat);
         this.dongCo = dongCo;
     }
 
