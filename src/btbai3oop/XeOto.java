@@ -1,9 +1,9 @@
 package btbai3oop;
 
 public class XeOto {
-    public String hangXe;
-    public int namSanXuat;
-    public float dongCo;
+    private String hangXe;
+    private int namSanXuat;
+    private float dongCo;
 
     public XeOto() {
     }
