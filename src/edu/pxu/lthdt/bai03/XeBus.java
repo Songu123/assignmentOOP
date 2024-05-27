@@ -47,7 +47,9 @@ public class XeBus {
     }
 
     public void setSoGhe(int soGhe) {
-        this.soGhe = soGhe;
+        if (soGhe > 1){
+            this.soGhe = soGhe;
+        }
     }
 
     @Override
