@@ -1,18 +1,16 @@
 package btbai3oop;
 
 public class XeOto {
-    public String hangXe;
-    public int namSanXuat;
-    public float dongCo;
+    private String hangXe;
+    private int namSanXuat;
+    private float dongCo;
 
     public XeOto() {
     }
 
     public XeOto(String hangXe, int namSanXuat, float dongCo) {
         this.hangXe = hangXe;
-        if (namSanXuat > 0) {
-            setNamSanXuat(namSanXuat);
-        }
+        setNamSanXuat(namSanXuat);
         this.dongCo = dongCo;
     }
 
@@ -29,7 +27,9 @@ public class XeOto {
     }
 
     public void setNamSanXuat(int namSanXuat) {
-        this.namSanXuat = namSanXuat;
+        if (namSanXuat > 0){
+            this.namSanXuat = namSanXuat;
+        }
     }
 
     public float getDongCo() {
