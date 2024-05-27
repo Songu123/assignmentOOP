@@ -1,4 +1,4 @@
-package btbai3oop;
+package edu.pxu.lthdt.bai03;
 
 public class XeBus {
     private String hangXe;
