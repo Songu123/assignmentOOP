@@ -27,8 +27,10 @@ public class XeOto {
     }
 
     public void setNamSanXuat(int namSanXuat) {
-        if (namSanXuat > 0){
+        if (namSanXuat > 0 && namSanXuat <= 2024){
             this.namSanXuat = namSanXuat;
+        }else {
+            System.out.println("Nam sản xuất sai!");
         }
     }
 

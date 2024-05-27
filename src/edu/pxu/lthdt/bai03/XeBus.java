@@ -29,8 +29,10 @@ public class XeBus {
     }
 
     public void setNamSanXuat(int namSanXuat) {
-        if (namSanXuat > 0){
+        if (namSanXuat > 0 && namSanXuat <= 2024){
             this.namSanXuat = namSanXuat;
+        }else {
+            System.out.println("Nam sản xuất sai!");
         }
     }
 
@@ -47,7 +49,11 @@ public class XeBus {
     }
 
     public void setSoGhe(int soGhe) {
-        this.soGhe = soGhe;
+        if (soGhe > 0){
+            this.soGhe = soGhe;
+        }else {
+            System.out.println("Số ghe không hợp lệ!");
+        }
     }
 
     @Override
